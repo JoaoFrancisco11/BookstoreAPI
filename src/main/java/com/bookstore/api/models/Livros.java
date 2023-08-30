@@ -1,7 +1,12 @@
 package com.bookstore.api.models;
 
 import jakarta.persistence.*;
-
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "livros")
 public class Livros {
@@ -12,7 +17,7 @@ public class Livros {
     private String isbn;
     private String titulo;
     private String editora;
-    @Column(name = "ano_publicaco")
+    @Column(name = "ano_publicacao")
     private Integer anoPublicacao;
     private String genero;
     @Column(name = "num_copias_disponiveis")
