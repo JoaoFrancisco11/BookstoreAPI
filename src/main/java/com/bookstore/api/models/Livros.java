@@ -28,5 +28,4 @@ public class Livros {
     @ManyToOne
     @JoinColumn(name = "autor_id")
     private Autores autor_id;
-
 }
